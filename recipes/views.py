@@ -7,10 +7,11 @@ def home(request):
     return render(request, 'recipes/home.html')
 
 
-def sobre(request):
-    return HttpResponse('Area Sobre - 02')
-
 
 def contato(request):
-    return HttpResponse('Area Contato - 03')
+    return render(request, 'recipes/contato.html')
+
+
+def sobre(request):
+    return HttpResponse('Area Sobre - 02')
 
